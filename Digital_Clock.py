@@ -3,7 +3,6 @@ from tkinter import ttk
 from tkinter import font
 import time
 import datetime
-
 def quit(*args):
     root.destroy()
 
