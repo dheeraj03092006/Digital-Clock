@@ -1,8 +1,8 @@
-from tkinter import *
-from tkinter import ttk
-from tkinter import font
-import time
 import datetime
+from tkinter import *
+from tkinter import font
+from tkinter import ttk
+
 
 def quit(*args):
     root.destroy()
@@ -10,14 +10,14 @@ def quit(*args):
 
 def clock_time():
     time = datetime.datetime.now()
-    time = (time.strftime("%H:%M:%S %d-%m-%Y"))
+    time = (time.strftime("  %H:%M:%S\n%d-%m-%Y"))
 
     txt.set(time)
 
     root.after(1000,clock_time)
 
 root = Tk()
-root.attributes("-fullscreen",False)
+root.attributes("-fullscreen",True)
 root.configure(background='black')
 root.bind("x",quit)
 root.after(1000,clock_time)
