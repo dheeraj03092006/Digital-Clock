@@ -1,2 +1,2 @@
 # Digital-Clock
-This project gives the current time and date 
+This project gives the current time and date.
